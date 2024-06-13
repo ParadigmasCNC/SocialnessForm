@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Random</title>
+</head>
+<body>
+    <script>
+        // List of URLs to redirect to
+        var urls = [
+            "https://www.google.com.ar/",
+            "https://chatgpt.com/",
+            "https://www.youtube.com/"
+        ];
+
+        // Function to redirect randomly
+        function randomRedirect() {
+            var randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[randomIndex];
+        }
+
+        // Redirect when the page loads
+        randomRedirect();
+    </script>
+</body>
+</html>
